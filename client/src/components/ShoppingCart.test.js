@@ -2,6 +2,7 @@ import React from 'react'
 import { render, screen, fireEvent } from "@testing-library/react";
 import ShoppingCart from "./ShoppingCart";
 
+//Created Mock plant data to test rendering of shopping cart
 const plants = [
     {
     name:'Peperomia Rosso',
@@ -28,14 +29,11 @@ const plants = [
     price: 15}
 ]
     
-test('There is a test', () =>{
-
-})
 
 test("displays plants in cart", () => {
   //STEP 1: Render Shopping Cart with mock plant data in it
     const { getByText } = render(<ShoppingCart cart={plants} />)
 // STEP 2: Assert
-    expect(screen.getByText(/pweperomia rosso/i));
+    expect(screen.getByText(/peperomia rosso/i));
     expect(screen.getByText(/string of dolphins/i));
 })
