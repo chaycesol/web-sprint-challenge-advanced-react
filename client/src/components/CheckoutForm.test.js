@@ -39,7 +39,8 @@ test("form shows success message on submit with form details", () => {
     expect(screen.getByText(/1234 test drive/i))
     expect(screen.getByText(/los angeles/i))
     expect(screen.getByText(/90064/i))
-    expect(screen.getByText(/you have ordered some plants!/i))
-    expect(screen.getByText(/your new green friends will be shipped to:/i))
-
+    //There is actually a test ID for this called "successMessage" in CheckoutForm.js
+    // expect(screen.getByText(/you have ordered some plants!/i))
+    // expect(screen.getByText(/your new green friends will be shipped to:/i))
+    expect(screen.getByTestId('successMessage'))
 });
