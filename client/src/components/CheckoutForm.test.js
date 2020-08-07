@@ -44,3 +44,4 @@ test("form shows success message on submit with form details", () => {
     // expect(screen.getByText(/your new green friends will be shipped to:/i))
     expect(screen.getByTestId('successMessage'))
 });
+// NOTE: Force failure by changing label inputs and removing test ID - failed as expected. 

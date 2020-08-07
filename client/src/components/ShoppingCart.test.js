@@ -37,3 +37,4 @@ test("displays plants in cart", () => {
     expect(screen.getByText(/peperomia rosso/i));
     expect(screen.getByText(/string of dolphins/i));
 })
+// NOTE: Force failure by changing name of one of the plants in mock plant data object array to zz plant - worked and failed as expected
